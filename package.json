@@ -1,0 +1,32 @@
+{
+  "name": "artist-directory",
+  "version": "1.0.0",
+  "description": "Artists directory app in AngularJS1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruno78/artist-directory.git"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "1",
+    "application",
+    "spa"
+  ],
+  "author": "Bruno G. Tavares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bruno78/artist-directory/issues"
+  },
+  "homepage": "https://github.com/bruno78/artist-directory#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "serve-static": "^1.13.1"
+  }
+}
