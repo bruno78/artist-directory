@@ -1,14 +1,18 @@
 'use strict'
 
 angular.
-    module('myApp', []).
-    controller('MyController', function MyController($scope, $http) {
-        
-        $http.get('js/data.json')
-            .then(function(response) {
-                $scope.artists = response.data;
-                $scope.artistOrder = 'name';
-        });
-
-        
-    });
+    module('myApp', [
+        'ngRoute',
+        'myControllers'
+    ]).
+    config(['$routeProvider', function($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'js/partials/search.html',
+                controller: 'SearchController'
+            })
+            .when('/details/:itemId', {
+                templateUrl: 'js/partials/details.html',
+                controller: 'DetailsController'
+            });
+    }]);
